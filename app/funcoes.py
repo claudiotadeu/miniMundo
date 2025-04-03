@@ -8,7 +8,7 @@ from AgenciaController import *
 
 
 def path():
-    path=os.path.dirname(os.path.realpath(__file__))
+    path = os.path.dirname(os.path.realpath(__file__))
     return path
 
 def separadorLinha():
@@ -22,14 +22,14 @@ def menuPrincipal():
     print('Operações Bancarias  ............[4]')
     print('Relatórios  .....................[5]')
     print('Sair  ...........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuTabelas():
     print('TIPOS DE CONTAS  ................[1]')
     print('NATUREZA DE MOVIMENTAÇÕES  ......[2]')
     print('SAIR  ...........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuClientes():
@@ -38,7 +38,7 @@ def menuClientes():
     print('EXCLUIR CLIENTE  ................[3]')
     print('LISTAR CLIENTE  .................[4]')
     print('SAIR  ...........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuAgencias():
@@ -47,7 +47,7 @@ def menuAgencias():
     print('EXCLUIR AGÊNCIA  ................[3]')
     print('LISTAR AGÊNCIA  .................[4]')
     print('SAIR  ...........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuOperacoesBancarias():
@@ -57,7 +57,7 @@ def menuOperacoesBancarias():
     print('APLICAR TAXA DE JUROS ...........[4]')
     print('ENCERRAR CONTA ..................[5]')
     print('SAIR  ...........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuRelatorios():
@@ -66,7 +66,7 @@ def menuRelatorios():
     print('IMPRIMIR EXTRATO MOVIMENTAÇÃO ..[3]')
     print('IMPRIMIR DADOS DA CONTAS .......[4]')
     print('SAIR  ..........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuTiposConta():
@@ -75,7 +75,7 @@ def menuTiposConta():
     print('EXCLUIR TIPO DE CONTA ..........[3]')
     print('LISTAR TIPOS DE CONTAS .........[4]')
     print('SAIR  ..........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def menuNaturezaMovimentacoes():
@@ -84,14 +84,14 @@ def menuNaturezaMovimentacoes():
     print('EXCLUIR NATUREZA DE MOVIMENTAÇÕES  [3]')
     print('LISTAR NATUREZA DE MOVIMENTAÇÕES  .[4]')
     print('SAIR  ..........................[0]')
-    operacao=int(input('Digite uma Opção: '))
+    operacao = int(input('Digite uma Opção: '))
     return operacao
 
 def validaSituacao(situacao):
     situacao = situacao
     if situacao =='1':
         return 1
-    elif situacao=='0':
+    elif situacao == '0':
         return 0
     else:
         return -1

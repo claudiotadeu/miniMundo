@@ -1,15 +1,15 @@
 from funcoes import *
 
 def listaTipoConta():
-    vsql="SELECT * FROM tiposContas WHERE ativo=1"
-    vconexao=conexao.ConexaoBanco()
-    resultado=conexao.consulta(vconexao,vsql)
-    vconexao.close()
+    sql = "SELECT * FROM tiposContas WHERE ativo=1"
+    conexao = conexao.ConexaoBanco()
+    resultado = conexao.consulta(conexao,sql)
+    conexao.close()
     return resultado    
 
 def listaNaturezaMovimentacao():
-    vsql="SELECT * FROM naturezasMovimentacao WHERE ativo=1"
-    vconexao=conexao.ConexaoBanco()
-    resultado=conexao.consulta(vconexao,vsql)
-    vconexao.close()
+    sql = "SELECT * FROM naturezasMovimentacao WHERE ativo=1"
+    conexao = conexao.ConexaoBanco()
+    resultado = conexao.consulta(conexao,sql)
+    conexao.close()
     return resultado    
